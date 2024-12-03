@@ -1,0 +1,10 @@
+<div ng-controller="TodoController">
+    <h1>Todo List</h1>
+    <input type="text" ng-model="newTask" placeholder="Add a new task">
+    <button ng-click="addTask()">Add</button>
+    <ul>
+        <li ng-repeat="task in tasks">
+            <todo-item task="task" remove="removeTask(task.id)" complete="completeTask(task.id)"></todo-item>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,8 @@
+<div ng-controller="CompletedController">
+    <h1>Completed Tasks</h1>
+    <ul>
+        <li ng-repeat="task in tasks">
+            {{task.text | capitalize}}
+        </li>
+    </ul>
+</div>
